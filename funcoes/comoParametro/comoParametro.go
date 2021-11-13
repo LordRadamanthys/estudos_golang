@@ -1,0 +1,22 @@
+package main
+
+import "fmt"
+
+func multiplicacao(a, b int) int {
+	return a * b
+}
+
+func soma(a, b int) int {
+	return a + b
+}
+func exec(funcao func(int, int) int, p1, p2 int) int {
+	return funcao(p1, p2)
+}
+
+func main() {
+	a := exec(multiplicacao, 2, 2)
+	s := exec(soma, 5, 2)
+
+	fmt.Print(a)
+	fmt.Print(s)
+}
