@@ -2,6 +2,7 @@ package matematica
 
 import "testing"
 
+// run command = go test
 const erroPadrao = "Valor esperado %v, mas o resultado encontrado foi %v."
 
 func TestMedia(t *testing.T) {
